@@ -11,7 +11,10 @@
   <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/e4/2c/02/e42c02a08fa6124dbc1edcbdf10552b4.jpg" />
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
 
   <!-- TailwindCSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -25,14 +28,17 @@
           },
         },
       },
-    }
+    };
   </script>
 
   <!-- Alpine.js -->
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
   <!-- Fancybox -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+  />
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 </head>
 
@@ -48,17 +54,18 @@
     </div>
   </header>
 
-  <!-- Hero Section with Fullscreen Background -->
+  <!-- Hero Section -->
   <section class="relative w-full min-h-screen flex flex-col items-center justify-center text-center">
-    <!-- Fullscreen Background Image -->
-    <div class="absolute inset-0 bg-cover bg-center z-0"
-         style="background-image: url('https://i.pinimg.com/736x/44/2a/56/442a56a0652ca48c455a5632561313f2.jpg');">
-    </div>
+    <!-- Background -->
+    <div
+      class="absolute inset-0 bg-cover bg-center z-0"
+      style="background-image: url('https://i.pinimg.com/736x/44/2a/56/442a56a0652ca48c455a5632561313f2.jpg');"
+    ></div>
 
     <!-- Dark overlay -->
     <div class="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
 
-    <!-- Foreground content -->
+    <!-- Foreground -->
     <div class="relative z-10 text-white">
       <div class="text-6xl mb-3">🎞️</div>
       <h1 class="text-5xl md:text-6xl font-heading font-bold mb-4">Photo Diary</h1>
@@ -66,60 +73,117 @@
     </div>
 
     <!-- Down arrow -->
-    <a href="#portfolio" class="relative z-10 mt-10 animate-bounce text-white text-4xl">
-      ↓
-    </a>
+    <a href="#portfolio" class="relative z-10 mt-10 animate-bounce text-white text-4xl">↓</a>
   </section>
 
- <!-- Portfolio Section (Minimal Masonry Layout) -->
-<section id="portfolio" class="max-w-7xl mx-auto py-16 px-5 md:px-20">
-  <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
-    <a href="https://images.unsplash.com/photo-1748683401637-5cc655b36f49?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
-      <img src="https://images.unsplash.com/photo-1748683401637-5cc655b36f49?w=900&auto=format&fit=crop&q=60" alt="Photo 1" class="w-full" />
-    </a>
-    <a href="https://images.unsplash.com/photo-1748683401639-e2bf38516d55?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
-      <img src="https://images.unsplash.com/photo-1748683401639-e2bf38516d55?w=900&auto=format&fit=crop&q=60" alt="Photo 2" class="w-full" />
-    </a>
-    <a href="https://images.unsplash.com/photo-1748683401634-61793da71a6b?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
-      <img src="https://images.unsplash.com/photo-1748683401634-61793da71a6b?w=900&auto=format&fit=crop&q=60" alt="Photo 3" class="w-full" />
-    </a>
-    <a href="https://images.unsplash.com/photo-1748683401635-6332db1b866c?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
-      <img src="https://images.unsplash.com/photo-1748683401635-6332db1b866c?w=900&auto=format&fit=crop&q=60" class="w-full" />
-    </a>
-    <a href="https://images.unsplash.com/photo-1748683401638-b1f80ba0fea2?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
-      <img src="https://images.unsplash.com/photo-1748683401638-b1f80ba0fea2?w=900&auto=format&fit=crop&q=60" class="w-full" />
-    </a>
-    <a href="https://images.unsplash.com/photo-1748683386829-9078dcfafc72?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
-      <img src="https://images.unsplash.com/photo-1748683386829-9078dcfafc72?w=900&auto=format&fit=crop&q=60" class="w-full" />
-    </a>
-    <a href="https://images.unsplash.com/photo-1748684050551-feac8fccfca8?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
-      <img src="https://images.unsplash.com/photo-1748684050551-feac8fccfca8?w=900&auto=format&fit=crop&q=60" class="w-full" />
-    </a>
-    <a href="https://images.unsplash.com/photo-1748684050778-84709dc175a3?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
-      <img src="https://images.unsplash.com/photo-1748684050778-84709dc175a3?w=900&auto=format&fit=crop&q=60" class="w-full" />
-    </a>
-    <a href="https://images.unsplash.com/photo-1748684050531-2e2599923053?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
-      <img src="https://images.unsplash.com/photo-1748684050531-2e2599923053?w=900&auto=format&fit=crop&q=60" class="w-full" />
-    </a>
-    <a href="https://images.unsplash.com/photo-1748684050519-2abff9a88f03?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
-      <img src="https://images.unsplash.com/photo-1748684050519-2abff9a88f03?w=900&auto=format&fit=crop&q=60" class="w-full" />
-    </a>
-    <a href="https://images.unsplash.com/photo-1748684050530-08344fd75ad6?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
-      <img src="https://images.unsplash.com/photo-1748684050530-08344fd75ad6?w=900&auto=format&fit=crop&q=60" class="w-full" />
-    </a>
-    <a href="https://images.unsplash.com/photo-1748684050525-a63b1c26f7ef?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
-      <img src="https://images.unsplash.com/photo-1748684050525-a63b1c26f7ef?w=900&auto=format&fit=crop&q=60" class="w-full" />
-    </a>
-    <a href="https://images.unsplash.com/photo-1748684050532-7fa67fd1469b?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
-      <img src="https://images.unsplash.com/photo-1748684050532-7fa67fd1469b?w=900&auto=format&fit=crop&q=60" class="w-full" />
-    </a>
-    <a href="https://images.unsplash.com/photo-1748684050527-b5cb8fbae4a6?q=80&w=2890&auto=format&fit=crop" data-fancybox="gallery">
-      <img src="https://images.unsplash.com/photo-1748684050527-b5cb8fbae4a6?q=80&w=2890&auto=format&fit=crop" class="w-full" />
-    </a>
-  </div>
-</section>
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="max-w-7xl mx-auto py-16 px-5 md:px-20">
+    <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
 
+      <!-- NEW 12 images (AT THE TOP) -->
+      <a href="https://images.unsplash.com/photo-1762993115288-4f2f11d3de65?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1762993115288-4f2f11d3de65?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
 
+      <a href="https://images.unsplash.com/photo-1762993115505-b8a146499734?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1762993115505-b8a146499734?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1762993115510-62ac0c9c5a63?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1762993115510-62ac0c9c5a63?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1762993115869-08b60a8d6143?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1762993115869-08b60a8d6143?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1762993115307-1dee88e2cc36?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1762993115307-1dee88e2cc36?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1762993115583-3c0a396663c2?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1762993115583-3c0a396663c2?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1762993115606-0c4579d19a67?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1762993115606-0c4579d19a67?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1762993115266-dc9f7e88d745?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1762993115266-dc9f7e88d745?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1762993115625-1d92a84c6c41?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1762993115625-1d92a84c6c41?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1762993115505-ecd7e0d79eea?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1762993115505-ecd7e0d79eea?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1762993115314-c88e99e13568?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1762993115314-c88e99e13568?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <!-- ORIGINAL IMAGES (now AFTER the new ones) -->
+      <a href="https://images.unsplash.com/photo-1748683401637-5cc655b36f49?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1748683401637-5cc655b36f49?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1748683401639-e2bf38516d55?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1748683401639-e2bf38516d55?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1748683401634-61793da71a6b?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1748683401634-61793da71a6b?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1748683401635-6332db1b866c?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1748683401635-6332db1b866c?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1748683401638-b1f80ba0fea2?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1748683401638-b1f80ba0fea2?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1748683386829-9078dcfafc72?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1748683386829-9078dcfafc72?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1748684050551-feac8fccfca8?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1748684050551-feac8fccfca8?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1748684050778-84709dc175a3?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1748684050778-84709dc175a3?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1748684050531-2e2599923053?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1748684050531-2e2599923053?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1748684050519-2abff9a88f03?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1748684050519-2abff9a88f03?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1748684050530-08344fd75ad6?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1748684050530-08344fd75ad6?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1748684050525-a63b1c26f7ef?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1748684050525-a63b1c26f7ef?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1748684050532-7fa67fd1469b?w=900&auto=format&fit=crop&q=60" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1748684050532-7fa67fd1469b?w=900&auto=format&fit=crop&q=60" class="w-full" />
+      </a>
+
+      <a href="https://images.unsplash.com/photo-1748684050527-b5cb8fbae4a6?q=80&w=2890&auto=format&fit=crop" data-fancybox="gallery">
+        <img src="https://images.unsplash.com/photo-1748684050527-b5cb8fbae4a6?q=80&w=2890&auto=format&fit=crop" class="w-full" />
+      </a>
+
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="text-center py-10 border-t border-gray-200 dark:border-gray-700">
@@ -128,7 +192,9 @@
   </footer>
 
   <!-- Fancybox init -->
-  <script>Fancybox.bind("[data-fancybox]", {});</script>
+  <script>
+    Fancybox.bind("[data-fancybox]", {});
+  </script>
 
 </body>
 </html>
